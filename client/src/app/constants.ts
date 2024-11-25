@@ -1,6 +1,6 @@
 export const ASSETS_BASE_URL = `/assets`;
 
-export const API_URL = `http://localhost:3001`;
+export const API_URL = `https://operaa-95613992a56c.herokuapp.com`;
 
 export const MAIN_WEBSITE_URL = `/`;
 
