@@ -93,7 +93,7 @@ const App = () => {
             <Route
               path="*"
               element={
-                <Navigate to={MAIN_DASHBOARD_LOGIN} />
+                <Navigate to={`${MAIN_DASHBOARD_URL}/`} />
               }
             />
           </Route>
