@@ -1,6 +1,6 @@
 export const ASSETS_BASE_URL = `/assets`;
 
-export const API_URL = `https://operaa-95613992a56c.herokuapp.com`;
+export const API_URL = `api.operapeinture.com`;
 
 export const MAIN_WEBSITE_URL = `/`;
 
