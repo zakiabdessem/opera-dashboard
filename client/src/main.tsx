@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import './index.css';
 import { MAIN_DASHBOARD_LOGIN, MAIN_DASHBOARD_URL } from './app/constants';
@@ -17,8 +17,6 @@ import store from './redux/Store';
 {
   /* Public Pages */
 }
-const Home = lazy(() => import('./pages/Home'));
-
 // import RegisterPage from "./pages/Register";
 
 {
@@ -51,7 +49,7 @@ const App = () => {
       >
         <Routes>
           {/* Public routes */}
-          <Route path="/" element={<Home />} />
+        
           <Route path={MAIN_DASHBOARD_LOGIN} element={<LoginPage />} />
 
           {/* Protected routes */}
@@ -95,14 +93,11 @@ const App = () => {
             <Route
               path="*"
               element={
-                <div className="flex justify-center items-center h-screen">
-                  <div className="text-3xl font-bold text-gray-800">
-                    404 Not Found
-                  </div>
-                </div>
+                <Navigate to={MAIN_DASHBOARD_LOGIN} />
               }
             />
           </Route>
+
 
           {/* Redirect/Path for handling unmatched routes */}
           {/* <Route path="*" element={<NotFound />} /> */}
