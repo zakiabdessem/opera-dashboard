@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Product {
+  _id: ID
+  category: String
+  product_img: String
+  product_pdf: String
+  title: String
+}
+
+type Query {
+  newerProducts: [Product!]!
+  product(id: String!): Product!
+  products: [Product!]!
+  users: [User!]!
+}
+
+type User {
+  _id: ID
+  email: String!
+  firstName: String!
+  lastName: String!
+  pending: Boolean!
+  role: String!
+}
