@@ -1,10 +1,10 @@
 import { useMutation } from "react-query";
-import { Product } from "./useProducts";
 import { instance } from "@/app/axios";
 import { useNavigate } from "react-router-dom";
 import { MAIN_DASHBOARD_URL } from "@/app/constants";
 import { toast } from "react-toastify";
 import { useDispatch } from "@/redux/hooks";
+import { Product } from "@/types/products";
 
 export const useEditProduct = () => {
   const dispatch = useDispatch();

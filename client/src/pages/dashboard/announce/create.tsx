@@ -26,7 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import useProducts from '@/hooks/products/useProducts';
+import { useProducts } from '@/hooks/products/useProducts';
 import { Textarea } from '@/components/ui/textarea';
 
 //const MAX_FILE_SIZE = 100 * 1024 * 1024;

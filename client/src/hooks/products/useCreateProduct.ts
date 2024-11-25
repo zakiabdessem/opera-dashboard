@@ -1,11 +1,11 @@
 import { useMutation } from "react-query";
-import { Product } from "./useProducts";
 import { instance } from "@/app/axios";
 import { useNavigate } from "react-router-dom";
 import { MAIN_DASHBOARD_URL } from "@/app/constants";
 import { toast } from "react-toastify";
 import { useDispatch } from "@/redux/hooks";
 import axios, { AxiosError } from "axios";
+import { Product } from "@/types/products";
 
 export const useCreateProduct = () => {
   const dispatch = useDispatch();

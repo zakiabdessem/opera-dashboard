@@ -17,8 +17,8 @@ import { Button } from '@/components/ui/button';
 import { instance } from '@/app/axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import useProducts from '@/hooks/products/useProducts';
-import { Products } from '@/types/products';
+import { useProducts } from '@/hooks/products/useProducts';
+import { Product } from '@/types/products';
 
 // TODO: Add table pagination
 
@@ -43,7 +43,7 @@ export default function Announces() {
   );
 }
 
-function ProductTable({ products }: { products: Products[] }) {
+function ProductTable({ products }: { products: Product[] }) {
   const navigate = useNavigate();
 
   const handleDeleteAnnounce = async (id: string) => {
